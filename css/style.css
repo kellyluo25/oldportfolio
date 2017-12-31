@@ -1,37 +1,124 @@
-
-
-/**** ADD YOUR STYLES ****/
-
-
-/****************/
-/*   BAR-CHART  */
-/****************/
-
-.bar {
-  fill: #3C948B;
+@media {
+    .container-fluid{
+        max-width: 70%;
+    }
 }
 
-.bar:hover {
-  fill: #327972;
+h1 {
+    font-family: 'Playfair Display', 'Georgia', 'Serif';
+    font-weight: 700; 
+    font-style: italic;
+    text-align: center;
+    color: #ffffff;
 }
 
-.axis {
-  font: 10px sans-serif;
+h2 {
+    text-transform: uppercase; 
 }
 
-.axis path,
-.axis line,
-.domain {
-  fill: none;
-  stroke: #888;
-  shape-rendering: crispEdges;
+/* header */
+
+
+.header {
+    width: 100%;
+    text-align: center;
+    background-color: #303030;
+    -webkit-transition: ease 0.5s;
+    -moz-transition: ease 0.5s;
+    transition: ease 0.5s;
 }
 
-#chart-area text {
-  font-size: 11px;
+.fullheader {
+    height: 130px;  
 }
 
-.axis-label {
-  fill: #888;
-  font-size: 10px;
+.fullheader h1 {
+    font-size: 60px;
+    line-height: 130px; 
+}
+
+.smallheader {
+    height: 60px;
+}
+
+.smallheader h1 {
+    font-size: 25px;  
+    line-height: 60px; 
+}
+
+.homelink {
+    text-decoration: none; 
+}
+
+/* structure */
+
+.col-md, .col-sm {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+.row {
+    padding-left: 15px; 
+    padding-right: 15px; 
+}
+
+/* display entries */
+.image {
+	display: block;
+	height: auto;
+	width: 100%;
+}
+
+
+.text {
+	color: #ffffff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+
+.title {
+	font-family: 'Playfair Display', 'Georgia', 'Serif';
+	font-size: 35px;
+    line-height: 35px;
+    text-align: left;
+	text-transform: lowercase;
+}
+
+.subtitle {
+	font-family: 'Playfair Display', 'Georgia', 'Serif';
+	font-size: 12px;
+	line-height: 24px;
+	margin-top: 10px;
+	text-align: left;
+    text-transform: uppercase;
+}
+
+.divider {
+	background-color: #fff;
+	height: 1px;
+	width: 35px;
+}
+
+.overlay {
+	background-color: #000;
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	opacity: 0.75;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+}
+
+.entry:hover .overlay {
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.category {
+    margin-top: 50px; 
 }
