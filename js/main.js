@@ -1,5 +1,5 @@
 $(window).scroll(function() {
-      if ($(this).scrollTop() > 20){
+      if ($(this).scrollTop() >= 1){
       $('.header').addClass('sticky-top smallheader');
       $('.header').removeClass('fullheader');
       } else {
@@ -7,3 +7,7 @@ $(window).scroll(function() {
       $('.header').addClass('fullheader');
       }
 });
+
+//$('.entry').height(function(){
+//    return $(this).width();
+//});
