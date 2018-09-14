@@ -237,12 +237,12 @@ a:hover {
 }
 
 .page-section { 
-    margin-bottom: 75px; 
+    margin-bottom: 85px; 
 }
 
 .page-caption {
     text-align: left; 
-    font-size: 12px; 
+    font-size: 11px; 
     color: #606060;
     font-family: 'Open Sans', Verdana, sans-serif;
 }
